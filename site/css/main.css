@@ -18,8 +18,28 @@ a {
   margin: 15px 30px;
 }
 
+
 .logo {
   max-height: 3rem;
+}
+
+.avatarImg{
+  display: block;
+  height: 10em;
+  width:10em;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+
+.avatar{
+  background-image: url("../image/avatar-bis.png");
+  transition: 1s ease-in-out;
+}
+.avatar-alt{
+  background-image: url("../image/avatar.svg");
+  transition: 1s ease-in-out;
 }
 
 #name {
@@ -33,3 +53,60 @@ a {
 button:focus {
   outline: none;
 }
+.desktop{
+  display: none;
+}
+.skills{
+  flex-direction: row-reverse;
+
+  justify-content: center;
+}
+.disabled{
+  opacity: 0.7;
+}
+.heading>h2,.heading>p{
+  padding-left: 1em;
+}
+
+.contents{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em auto;
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+  .navbar>.menu{
+    margin-left: auto;
+   }
+   .introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .desktop{
+    display: flex;
+  }
+  .skills{
+    display: flex;
+  }
+.box{
+  min-width: 10em;
+}
+  .contents{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+  }
+}
+

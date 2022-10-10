@@ -22,18 +22,21 @@
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
       <section class="introduction">
-        <figure class="desktop">
+        <figure class="desktop" title="Hi I'm Matt" description="background image">
+          <div id="avatar" class="avatarImg avatar"></div>
           <img src="image/desktop.svg" alt="desktop" />
+          
         </figure>
       </section>
 
       <!-- Second banner with description of your name and your presentation -->
       <section class="presentation">
-        <div class="description pink-bg">
+        <div id='description' class="description pink-bg">
           <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button class="bt" id="getName">Modify Text and color</button>
         </div>
-
+        
         <!-- Bloc of list of skill front end and back end -->
         <div class="skills">
           <div class="column">
@@ -44,9 +47,13 @@
               <h2 class="pink-text">Languages I speak:</h2>
               <p>MySql</p>
               <h2 class="pink-text">Dev Tools:</h2>
-              <ul>
+              <ul id="Back-end-List">
                 <li>VScode</li>
               </ul>
+              <div class="backBouton">
+                <input type="text" id="back-endValue">
+                <button id='back-end'class="bt-pink pink-text">add</button>
+              </div>
             </figure>
           </div>
           <div class="column">
@@ -62,6 +69,8 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
               </ul>
+              <button id='changeName'class="bt-pink pink-text">Modify</button>
+
             </figure>
           </div>
         </div>

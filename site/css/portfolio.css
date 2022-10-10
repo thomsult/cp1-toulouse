@@ -61,6 +61,8 @@
 
 .box {
   width: 25%;
+
+  
   padding: 30px;
   border: 1px solid #e6ecf8;
   margin: 20px;
@@ -79,4 +81,24 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+.bt {
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0);
+  border: thin solid #ffffff;
+  cursor: pointer;
+}
+.bt-pink {
+  
+  padding: 10px;
+  border-radius: 4px;
+  background: rgba(247, 148, 148, 0);
+  border: thin solid pink;
+  cursor: pointer;
+}
+.backBouton{
+  display: flex;
+  gap:0.5em;
 }
